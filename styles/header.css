@@ -1,0 +1,112 @@
+.theme_dark {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.heading {
+    font-family: var(--accent-font);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 90%;
+}
+
+.header-title {
+    font-family: var(--accent-font);
+    color: var(--text-color);
+    font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+    text-align: center;
+    line-height: 90%;
+}
+
+.content-section, .header-title {
+    padding: 0px 5vi;
+}
+
+.content__title {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 2.5vw;
+}
+
+.header {
+    padding-top: 10vw;
+}
+
+.header__menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    width: 100vw;
+    font-family: var(--main-font);
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.header__logo {
+    color: var(--text-color);
+}
+
+.header__theme-toggler {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.header__theme-button {
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.header__theme-button:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.header__theme-button:focus {
+    font-family: Raleway;
+}
+
+.header__theme-button:focus-visible {
+    border: 1px solid var(--text-color);
+    pointer-events: none;
+}
+
+.header__theme-button_type_light:focus:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 80px;
+    background-color: var(--accent-color); /*Разобраться*/
+    z-index: -1;
+    right: 5px;
+    top: 10px;
+}
+
+.theme_dark .header__theme-button_type_dark:focus:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/pattern.svg);
+    width: 70px;
+    height: 10px;
+    right: 3px;
+    top: 10px;
+    z-index: -1;
+}
+
+button {
+    outline: none;
+}
+
+

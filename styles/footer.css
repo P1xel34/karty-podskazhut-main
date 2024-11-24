@@ -1,0 +1,11 @@
+.footer {
+    margin-top: 10vw;
+    border-top: 1px solid var(--text-color);
+}
+
+.footer__copyright {
+    font-family: var(--main-font);
+    padding: 2.5vw;
+    font-size: 18px;
+    text-align: center;
+}
