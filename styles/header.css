@@ -83,18 +83,23 @@
     pointer-events: none;
 }
 
-.header__theme-button_type_light:focus:after {
+.header__theme-button_type_light:after {
+    --accent-color: #FFAB6B;
     content: "";
     position: absolute;
     height: 10px;
     width: 80px;
-    background-color: var(--accent-color); /*Разобраться*/
+    background-color: var(--accent-color);
     z-index: -1;
     right: 5px;
     top: 10px;
 }
 
-.theme_dark .header__theme-button_type_dark:focus:after {
+.theme_dark .header__theme-button_type_light:after {
+    background-color: transparent;
+}
+
+.theme_dark .header__theme-button_type_dark:after {
     position: absolute;
     content: "";
     background-image: url(../images/pattern.svg);
